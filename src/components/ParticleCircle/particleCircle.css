@@ -1,0 +1,21 @@
+#canvas{
+    display: flex;
+    top: 50%;
+    height: 500px;
+    margin: 0 auto;
+    perspective: 2000px;
+    perspective-origin: center center;
+    position: relative;
+    transform: translateY(-50%);
+    width: 500px;
+  }
+  
+  .point{
+    background: #E87A24;
+    border-radius: 50%;
+    height: 4px;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 4px;
+  }
+  
