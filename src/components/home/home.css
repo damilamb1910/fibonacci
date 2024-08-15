@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -8,38 +9,7 @@
     justify-content: center;
     font-family: "Oswald";
     width: 100%;
-}
-.landing__and__particle__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-}
-h1{
-    color: white;
-    font-size: 150px;
-    margin-left: 20px;
-}
-h3{
-    color: white;
-    font-size: 25px;
-    width: 400px;
-    margin-bottom: 100px;
-}
-.slogan__container{
-    display: flex;
-    font-size: 150px;
-    text-transform: uppercase;
-}
-.slogan__container h4{
-    color: white;
-}
-.landing__container{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-      background-image: url('../../assets/img/—Pngtree—noise\ abstract\ texture\ dark\ gray_1575837.png'),
+    background-image: url('../../assets/img/—Pngtree—noise\ abstract\ texture\ dark\ gray_1575837.png'),
       repeating-linear-gradient(
         90deg, /* Ángulo de las líneas verticales */
         #000000, /* Color del fondo del patrón */
@@ -58,102 +28,90 @@ h3{
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.landing__and__particle__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+h1{
+    color: white !important;
+    font-size: 150px !important;
+    margin-left: 20px;
+}
+
+.landing__and__particle__container h3{
+    color: white !important;
+    font-size: 25px !important;
+    width: 400px;
+    margin-bottom: 100px;
+}
+.slogan__container{
+    display: flex;
+    
+    text-transform: uppercase;
+}
+.slogan__container h4{
+    font-size: 150px !important;
+    color: white;
+}
+.landing__container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    
+    padding-top: 300px;
         background-size: cover;
         background-position: center;
 }
-.landing__container button{
-    border: none;
-    border-radius: 5px;
-    width: 300px;
-    height: 50px;
-    font-size: 17px;
-    color: #070B0E;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-    margin-top: 50px;
-}
-.landing__container button:hover{
-    background-color: #269dff ;
-    color: #FFFFFF;
 
-    
-}
-/* .nosotros{
-    padding-top: 115px;
-    height: 420px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: url(../../assets/img/nosotros-min.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-} */
-.nosotros h3{
-    font-size: 40px;
-    text-shadow: 2px 2px 2px black;
-    color: #FFFFFF;
-    border-bottom: 5px solid;
-    padding-bottom: 20px;
-}
-.nosotros p{
-    backdrop-filter: blur(10px);
-    padding-left: 20vw;
-    padding-right: 20vw;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-weight: 100;
-}
-h5{
-    margin-left:2vw;
-margin-right: 2vw;}
-.home h2{
-    color: #FFFFFF;
-    font-size: 50px;
-    width: 700px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.88); 
-    border-radius: 10px;
-    font-weight: 400;
 
-}
+
+
+
 
 
 @media only screen and  (max-width:600px) {
     
-    .img__home{
-        display: none;
+    
+    
+    .landing__and__particle__container{
+        
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
-    /* .landing__container{
-        background-image: url('../../assets/img/img-home-min.jpg');
-        background-size: cover;
-        background-position: center;
-    } */
-    .home h2{
+    .landing__and__particle__container h3{
+        order: 1;
+        margin: 0;
+        width: 90%;
+    }
+    .landing__container{
+        
+        flex-direction: column;
+        padding-top: 150px;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+    }
+    .slogan__container{
+        display: flex;
+        flex-direction: column;
+        
         text-transform: uppercase;
-        color: #FFFFFF;
-        font-size: 28px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        width: 340px;
-        text-shadow: 1px 1px 15px #269dff;
+        z-index: 999;
+    }
+    .slogan__container h4{
+        font-size: 60px !important;
+        margin-top: 300px;
     }
     h1{
-        display: none;
-    }
-    .nosotros p{
-        padding-left: 5vw;
-        padding-right: 5vw;
-        text-shadow: 1px 1px 8px black;
-        font-size: 20px;
-    }
-    .nosotros {
-        height: 600px;
+        font-size: 60px !important;
+        margin: 0;
     }
     
 }

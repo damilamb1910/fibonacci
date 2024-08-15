@@ -1,7 +1,7 @@
 #canvas{
     display: flex;
-    top: 50%;
-    height: 500px;
+    top: 0%;
+    height: 300px;
     margin: 0 auto;
     perspective: 2000px;
     perspective-origin: center center;
@@ -19,3 +19,28 @@
     width: 4px;
   }
   
+  @media only screen and  (max-width:850px) {
+  
+    
+    
+    
+     
+         
+  }
+  
+  
+   @media only screen and  (max-width:830px) {
+      
+    #canvas{
+        display: flex;
+        top: -80px;
+        height: 0px;
+        margin: 0 auto;
+        perspective: 2000px;
+        perspective-origin: center center;
+        position: relative;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+           
+   }

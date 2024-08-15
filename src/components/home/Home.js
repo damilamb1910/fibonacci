@@ -5,6 +5,7 @@ import Loading from '../Loading/Loading'
 
 import { MenuContext } from '../../context/MenuContext';
 import ParticleCircle from '../ParticleCircle/ParticleCircle';
+import Servicios from '../servicios/Servicios';
 
 
 const Home = () => {
@@ -50,7 +51,9 @@ const Home = () => {
               <h4>We are</h4>
               <h1> Fibonacci</h1>
             </div>
-          
+          <div id='servicios'>
+          <Servicios/>
+          </div>
         
       
 
