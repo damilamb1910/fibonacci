@@ -6,6 +6,7 @@ import Loading from '../Loading/Loading'
 import { MenuContext } from '../../context/MenuContext';
 import ParticleCircle from '../ParticleCircle/ParticleCircle';
 import Servicios from '../servicios/Servicios';
+import ComoTrabajamos from '../comotrabajamos/ComoTrabajamos';
 
 
 const Home = () => {
@@ -54,7 +55,9 @@ const Home = () => {
           <div id='servicios'>
           <Servicios/>
           </div>
-        
+          <div id='servicios'>
+          <ComoTrabajamos/>
+          </div>
       
 
 

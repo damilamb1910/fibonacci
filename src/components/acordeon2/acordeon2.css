@@ -1,15 +1,13 @@
-.acordeon{
+.acordeon2{
     color: #ffffff;
-    width: 80%;
-   
+    width: 90%;
 }
-.item__acordeon{
+.item__acordeon2{
     background-color: black;
     padding: 10px 20px;
     margin-bottom: 5px;
-    
 }
-.titulo__item__acordeon{
+.titulo__item__acordeon2{
     font-size: 50px;
     display: flex;
     justify-content: space-between;
@@ -17,14 +15,14 @@
     cursor: pointer;
     border-top: solid  #333333 2px ;
 }
-.contenido__acordeon{
+.contenido__acordeon2{
+    font-size: 25px;
 opacity: 0;
 max-height: 0px;
 transition: all 0.5s ease-in;
-font-size: 25px;
 overflow: hidden;
 }
-.contenido__acordeon__show{
+.contenido__acordeon2__show{
     opacity: 1;
     max-height: 300px;
     transition: all 3s ease-in-out;
@@ -32,9 +30,5 @@ overflow: hidden;
     overflow: hidden;
     border-top: solid  #333333 2px
 
-    }
-    .wrapper{
-        display: flex;
-        justify-content: center;
     }
     

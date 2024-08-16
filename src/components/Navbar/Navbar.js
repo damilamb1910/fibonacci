@@ -12,16 +12,27 @@ import { MenuContext } from "../../context/MenuContext"
 const Navbar=(click)=>{
     const{menuOpen}=useContext(MenuContext)
     const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
     useEffect(() => {
         function handleResize() {
           setWindowSize(window.innerWidth);
         }
+        function handleScroll() {
+            const currentScrollPos = window.pageYOffset;
+            const isVisible = prevScrollPos > currentScrollPos;
+      
+            setVisible(isVisible);
+            setPrevScrollPos(currentScrollPos);
+          }
     
     comprobar()
         window.addEventListener('resize', handleResize);
+        window.addEventListener("scroll", handleScroll);
     
-        return () => window.removeEventListener('resize', handleResize);
-      }, [menuOpen]);
+        return () => {window.removeEventListener('resize', handleResize);
+                     window.removeEventListener("scroll", handleScroll);}
+      }, [prevScrollPos]);
     const comprobar=()=>{
         if(menu===true){
             toggleMenu()
@@ -35,7 +46,7 @@ const Navbar=(click)=>{
     }
 
     return(
-        <header onClick={comprobar}>
+        <header className={`header ${visible ? "visible" : "hidden"}`} onClick={comprobar}>
        <a href="#"><div className="logos__container"><img className="logo2" src={logo2} alt="" /><img className="logo" src={logo} alt="" /></div></a>
        <button onClick={toggleMenu} className="menu-boton">
            <svg className="menu" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"  viewBox="0 0 16 16">
