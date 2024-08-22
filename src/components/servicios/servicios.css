@@ -7,14 +7,11 @@
     align-items: center;
     padding-top: 100px;
     height: max-content;
-    
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .servicios h4{
     font-size: 100px;
     color: #ffffff;
+    line-height: 95px;
 }
 .servicios .text__special{
     color: #FF6F00;
@@ -22,21 +19,29 @@
 .slogan__servicios{
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 .slogan__servicios img{
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    filter: grayscale(100%);
 }
 .slogan__servicios__head{
     display: flex;
 }
 .acordeon__container{
-    width: 80%;
-}
-.acordeon__item{
-    background-color: #333333 !important;
+    width: 70%;
 }
 
+.graphic1{
+    background-image: url("../../assets/img/1915986-02.png");
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-size: cover;
+    margin-left: 10px;
+}
 
 @media only screen and  (max-width:600px) {
     

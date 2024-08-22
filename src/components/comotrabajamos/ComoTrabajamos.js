@@ -1,6 +1,6 @@
 import React from 'react'
 import "./comoTrabajamos.css"
-import sticker3 from "../../assets/img/sticker3.png"
+import sticker3 from "../../assets/img/17.png"
 import Acordeon2 from '../acordeon2/Acordeon2'
 
 const ComoTrabajamos = () => {

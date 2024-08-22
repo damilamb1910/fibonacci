@@ -1,6 +1,6 @@
 .acordeon2{
     color: #ffffff;
-    width: 90%;
+    width: 70%;
 }
 .item__acordeon2{
     background-color: black;
@@ -8,7 +8,7 @@
     margin-bottom: 5px;
 }
 .titulo__item__acordeon2{
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,19 +16,24 @@
     border-top: solid  #333333 2px ;
 }
 .contenido__acordeon2{
-    font-size: 25px;
+    font-size: 23px;
 opacity: 0;
 max-height: 0px;
-transition: all 0.5s ease-in;
+transition: all 1s ease-in;
 overflow: hidden;
 }
 .contenido__acordeon2__show{
     opacity: 1;
     max-height: 300px;
-    transition: all 3s ease-in-out;
-    font-size: 25px;
+    transition: all 3s ease-in;
+    font-size: 23px;
     overflow: hidden;
-    border-top: solid  #333333 2px
+    border-top: solid  #333333 1px
 
     }
-    
+    .titulo__item__acordeon2 h3{
+        font-size: 40px;
+    }
+    .titulo__item__acordeon2 img{
+        width: 40px;
+    }

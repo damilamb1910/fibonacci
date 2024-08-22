@@ -1,6 +1,6 @@
 .acordeon{
     color: #ffffff;
-    width: 80%;
+    width: 70%;
    
 }
 .item__acordeon{
@@ -10,25 +10,28 @@
     
 }
 .titulo__item__acordeon{
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     border-top: solid  #333333 2px ;
 }
+.titulo__item__acordeon img{
+    width: 120px;
+}
 .contenido__acordeon{
 opacity: 0;
 max-height: 0px;
 transition: all 0.5s ease-in;
-font-size: 25px;
+font-size: 23px;
 overflow: hidden;
 }
 .contenido__acordeon__show{
     opacity: 1;
     max-height: 300px;
     transition: all 3s ease-in-out;
-    font-size: 25px;
+    font-size: 23px;
     overflow: hidden;
     border-top: solid  #333333 2px
 
@@ -36,5 +39,6 @@ overflow: hidden;
     .wrapper{
         display: flex;
         justify-content: center;
+        width: 100%;
     }
     

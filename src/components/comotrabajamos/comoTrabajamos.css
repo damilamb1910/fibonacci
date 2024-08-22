@@ -7,29 +7,13 @@
     align-items: center;
     padding-top: 100px;
     height: max-content;
-    background-image: url('../../assets/img/—Pngtree—noise\ abstract\ texture\ dark\ gray_1575837.png'),
-      repeating-linear-gradient(
-        90deg, /* Ángulo de las líneas verticales */
-        #000000, /* Color del fondo del patrón */
-        #000000 90px, /* Tamaño del cuadrado */
-        #000000 90px, /* Color de la línea de la rejilla */
-        #333333 91px /* Tamaño del cuadrado más la línea */
-      ),
-      /* Gradiente vertical para las líneas horizontales de la rejilla */
-      repeating-linear-gradient(
-        25deg, /* Ángulo de las líneas horizontales */
-        #333333, /* Color del fondo del patrón */
-        #333333 50px, /* Tamaño del cuadrado */
-        #333333 50px, /* Color de la línea de la rejilla */
-        #333333 51px /* Tamaño del cuadrado más la línea */
-      );
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+  
 }
 .comoTrabajamos h4{
     font-size: 100px;
     color: #ffffff;
+    line-height: 90px;
 }
 .comoTrabajamos .text__special{
     color: #FF6F00;
@@ -37,6 +21,7 @@
 .slogan__comoTrabajamos{
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 .slogan__comoTrabajamos img{
     width: 130px;
@@ -44,13 +29,10 @@
 }
 .slogan__comoTrabajamos__head{
     display: flex;
+    align-items: center;
 }
-.acordeon__container{
-    width: 80%;
-}
-.acordeon__item{
-    background-color: #333333 !important;
-}
+
+
 
 
 @media only screen and  (max-width:600px) {
