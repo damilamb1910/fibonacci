@@ -12,25 +12,11 @@ html {
     justify-content: center;
     font-family: "Oswald";
     width: 100%;
-    background-image: url('../../assets/img/—Pngtree—noise\ abstract\ texture\ dark\ gray_1575837.png'),
-      repeating-linear-gradient(
-        90deg, /* Ángulo de las líneas verticales */
-        #000000, /* Color del fondo del patrón */
-        #000000 90px, /* Tamaño del cuadrado */
-        #000000 90px, /* Color de la línea de la rejilla */
-        #333333 91px /* Tamaño del cuadrado más la línea */
-      ),
-      /* Gradiente vertical para las líneas horizontales de la rejilla */
-      repeating-linear-gradient(
-        25deg, /* Ángulo de las líneas horizontales */
-        #333333, /* Color del fondo del patrón */
-        #333333 50px, /* Tamaño del cuadrado */
-        #333333 50px, /* Color de la línea de la rejilla */
-        #333333 51px /* Tamaño del cuadrado más la línea */
-      );
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: url('../../assets/img/background-02.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .landing__and__particle__container{
     display: flex;
@@ -53,7 +39,7 @@ h1{
 }
 .slogan__container{
     display: flex;
-    
+    margin-top: 100px;
     text-transform: uppercase;
 }
 .slogan__container h4{
@@ -63,12 +49,15 @@ h1{
 .landing__container{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    padding-top: 300px;
         background-size: cover;
         background-position: center;
+}
+.landing__container h3{
+    color: #ffffff;
+    font-size: 25px !important;
 }
 
 

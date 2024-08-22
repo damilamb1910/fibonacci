@@ -1,6 +1,6 @@
 #canvas{
     display: flex;
-    top: 0%;
+    top: 25%;
     height: 300px;
     margin: 0 auto;
     perspective: 2000px;

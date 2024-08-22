@@ -2,19 +2,21 @@ import React, { useEffect, useState } from 'react'
 import './home.css'
 import { useContext } from 'react';
 import Loading from '../Loading/Loading'
-
+import { Toaster, toast } from 'sonner';
 import { MenuContext } from '../../context/MenuContext';
 import ParticleCircle from '../ParticleCircle/ParticleCircle';
 import Servicios from '../servicios/Servicios';
 import ComoTrabajamos from '../comotrabajamos/ComoTrabajamos';
+import Nosotros from '../nosotros/Nosotros';
 
 
 const Home = () => {
   const {toggleMenu}=useContext(MenuContext)
   
   const [loading,setLoading]=useState(true)
+  
   useEffect(()=>{
-    
+    toast('soy un toast')
     window.scrollTo(0,0)
     setLoading(true)
     setTimeout(() => {
@@ -40,31 +42,29 @@ const Home = () => {
 
            <div className='landing__container'>
            <Loading loading={loading}/>
+           <Toaster />
            <div className='landing__and__particle__container'>
-           <h3>Estamos creando diseños inolvidables y transformando marcas.</h3>
-            
             <ParticleCircle/>
-            <h3>Ayudó a cambiar más de 40 empresas en todo el mundo.</h3>
-         
-        
            </div>
             <div className='slogan__container'>
               <h4>We are</h4>
               <h1> Fibonacci</h1>
+             
             </div>
-          <div id='servicios'>
-          <Servicios/>
-          </div>
-          <div id='servicios'>
-          <ComoTrabajamos/>
-          </div>
-      
-
+            <h3>Ayudamos a +15 empresas en toda argentina.</h3>
 
       </div>
        
         
-
+      <div id='nosotros'>
+            <Nosotros/>
+          </div>
+          <div id='servicios'>
+          <Servicios/>
+          </div>
+          <div id='comoTrabajamos'>
+          <ComoTrabajamos/>
+          </div>
       
      
      
