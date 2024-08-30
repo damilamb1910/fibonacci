@@ -1,0 +1,21 @@
+.acordeonFibonacci{
+    color: #ffffff;
+    top: 45%;
+    position: absolute;
+    left: 10%;
+}
+.acordeonFibonacci h3{
+    transition: all 1s ease-in;
+}
+.contenido__acordeonFibonacci{
+   display: none;
+}
+
+.acordeonFibonacci h3:hover{
+    font-size: 30px;
+    transition: all 1s ease-in;
+    color: #FF6F00;
+    text-shadow: black 2px 2px 2px;
+    background-color: black;
+    right: 10%;
+}

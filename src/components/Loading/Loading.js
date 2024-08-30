@@ -1,5 +1,5 @@
 import React from 'react'
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import HashLoader from "react-spinners/HashLoader";
 import './loading.css'
 
 const Loading = ({loading}) => {
@@ -7,8 +7,8 @@ const Loading = ({loading}) => {
     <>
    
     <div className={loading ? 'loading__container' : 'loading__none'}>
-      <ClimbingBoxLoader
-        color={"#0446F1"} loading={loading} size={40}
+      <HashLoader
+        color={"#FF6F00"} loading={loading} size={40}
         
 />
     </div>

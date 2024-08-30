@@ -19,16 +19,19 @@
     font-size: 23px;
 opacity: 0;
 max-height: 0px;
-transition: all 1s ease-in;
+transition: all 0.5s ease-in;
 overflow: hidden;
+text-align: center;
 }
 .contenido__acordeon2__show{
     opacity: 1;
     max-height: 300px;
-    transition: all 3s ease-in;
+    transition: all 2s ease-in;
     font-size: 23px;
     overflow: hidden;
-    border-top: solid  #333333 1px
+    border-top: solid  #333333 1px;
+    text-align: center;
+    
 
     }
     .titulo__item__acordeon2 h3{

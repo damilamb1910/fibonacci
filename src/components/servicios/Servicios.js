@@ -10,7 +10,7 @@ const Servicios = () => {
     <section className='servicios'>
 <div className='slogan__servicios'>
     <div className='slogan__servicios__head'>
-    <h4>COMO PODEMOS</h4>
+    <h4>CÓMO PODEMOS</h4>
     <div className='graphic1'>
     <img src={logo} alt="" />
     </div>

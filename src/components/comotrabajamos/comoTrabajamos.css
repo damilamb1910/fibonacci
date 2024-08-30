@@ -5,7 +5,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-height: min-content;
     padding-top: 100px;
+    padding-bottom: 400px;
     height: max-content;
     backdrop-filter: blur(10px);
   
@@ -30,6 +32,13 @@
 .slogan__comoTrabajamos__head{
     display: flex;
     align-items: center;
+}
+.espiral{
+    position: absolute;
+    transform: rotate(50deg);
+    bottom: 13%;
+    right: 35%;
+    height: 600px;
 }
 
 

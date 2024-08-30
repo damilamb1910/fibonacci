@@ -57,6 +57,7 @@ elementoGrafico: elementoGrafico8
         }
     ]
   return (
+    
     <div className='wrapper'>
         
         <div className='acordeon'>

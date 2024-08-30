@@ -25,7 +25,7 @@ const Home = () => {
         top:0,
         behavior: "smooth",
       });
-    }, "5000");
+    }, "3000");
   },[])
   const handleClick = () => {
    

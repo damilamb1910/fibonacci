@@ -3,17 +3,20 @@ import "./comoTrabajamos.css"
 import sticker3 from "../../assets/img/17.png"
 import Acordeon2 from '../acordeon2/Acordeon2'
 
+
 const ComoTrabajamos = () => {
   return (
    <section className='comoTrabajamos'>
 <div className='slogan__comoTrabajamos'>
     <div className='slogan__comoTrabajamos__head'>
-    <h4>COMO LOGRAMOS</h4><img src={sticker3} alt="" />
+    <h4>CÓMO LOGRAMOS</h4><img src={sticker3} alt="" />
     </div>
 
 <h4 className='text__special'>RESULTADOS</h4>
 </div>
-      <Acordeon2/>
+
+     <Acordeon2/>
+      
    </section>
   )
 }

@@ -3,6 +3,8 @@ import './nosotros.css'
 import sticker1 from "../../assets/img/sticker2.png"
 import cami from "../../assets/cami2.png"
 import dami from "../../assets/damian1.png"
+import gaston from "../../assets/img/gastonPhoto.png"
+import elian from "../../assets/img/eliasphoto.png"
 
 
 
@@ -26,8 +28,8 @@ const Nosotros = () => {
         </div> 
      <div className='card__container__nosotros'>
         <div className='card__nosotros'>
-            <img src={cami} alt="" />
-            <h5>Camila</h5>
+            <img src={gaston} alt="" />
+            <h5>Gastón</h5>
             <h6>🟠Designer</h6>
             </div>
             <div className='card__nosotros'>
@@ -37,7 +39,12 @@ const Nosotros = () => {
             </div>
             <div className='card__nosotros'>
             <img src={dami} alt="" />
-            <h5>Camila</h5>
+            <h5>Damián</h5>
+            <h6>🟠Developer</h6>
+            </div>
+            <div className='card__nosotros'>
+            <img src={elian} alt="" />
+            <h5>Elián</h5>
             <h6>🟠Designer</h6>
             </div>
 

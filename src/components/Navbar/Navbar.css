@@ -129,7 +129,21 @@ header.visible {
 header.hidden {
   top: -115px; /* Ajusta esto dependiendo de la altura de tu header */
 }
-
+@media only screen and  (max-width:1300px) {
+  
+    
+  .logo{
+    height: 22px;
+    
+}
+.logo2{
+  height: 40px;
+  padding-right: 2px;
+}
+  
+   
+       
+}
  @media only screen and  (max-width:850px) {
   
   .dropdown li{
