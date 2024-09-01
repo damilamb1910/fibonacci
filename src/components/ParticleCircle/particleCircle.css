@@ -19,12 +19,12 @@
     width: 4px;
   }
   
-  @media only screen and  (max-width:1800px) {
+  @media only screen and  (max-width:1400px) {
   
     
     #canvas{
       
-      top: 130px;
+      top: 200px;
       
     }
     

@@ -22,7 +22,7 @@ const ParticleCircle = () => {
       // Limpiar los elementos antiguos
       canvas.innerHTML = '';
 
-      const radius = windowSize < 1260 ? 100 : 200;  // Ajustar el radio según el tamaño de la ventana
+      const radius = windowSize < 1400 ? 150 : 200;  // Ajustar el radio según el tamaño de la ventana
 
       // Crear los elementos
       for (let i = 0; i < cant; i++) {

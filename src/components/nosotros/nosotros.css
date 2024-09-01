@@ -25,6 +25,7 @@
 .slogan__nosotros img{
     width: 130px;
     height: 130px;
+    
 }
 .slogan__nosotros__head{
     display: flex;
@@ -50,6 +51,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 .card__nosotros{
     margin-left: 10px;
@@ -62,10 +64,35 @@
     font-size: 18px;
 }
 .card__nosotros img{
-    height: 400px;
+    height: 350px;
+    width: 350px;
     filter: grayscale(100%);
     border-radius: 5px;
+    object-fit: cover;
 }
+@media only screen and  (max-width:1400px) {
+    .card__nosotros img{
+        height: 330px;
+        width: 330px;
+        
+    }
+    .nosotros h4{
+        font-size: 120px;
+        color: #ffffff;
+    }
+    .nosotros__body {
+        font-size: 26px;
+        
+        
+    }
+    .nosotros__body{
+        font-size: 30px;
+        width: 60%;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+        
+    }
+  }
 
 
 

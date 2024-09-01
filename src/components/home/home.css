@@ -59,7 +59,19 @@ h1{
     color: #ffffff;
     font-size: 25px !important;
 }
-
+@media only screen and  (max-width:1400px) {
+    .slogan__container{
+        margin-top: 130px;
+    }
+    
+    .slogan__container h4{
+        font-size: 130px !important;
+    }
+    h1{
+        font-size: 130px !important;
+    }
+    
+  }
 
 
 

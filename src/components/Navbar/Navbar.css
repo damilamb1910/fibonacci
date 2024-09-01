@@ -129,7 +129,7 @@ header.visible {
 header.hidden {
   top: -115px; /* Ajusta esto dependiendo de la altura de tu header */
 }
-@media only screen and  (max-width:1300px) {
+@media only screen and  (max-width:1400px) {
   
     
   .logo{
@@ -140,7 +140,10 @@ header.hidden {
   height: 40px;
   padding-right: 2px;
 }
-  
+.hablemos{
+  width: 180px;
+  height: 60px;
+} 
    
        
 }
