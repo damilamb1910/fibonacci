@@ -8,6 +8,7 @@ import ParticleCircle from '../ParticleCircle/ParticleCircle';
 import Servicios from '../servicios/Servicios';
 import ComoTrabajamos from '../comotrabajamos/ComoTrabajamos';
 import Nosotros from '../nosotros/Nosotros';
+import Footer from '../footer/Footer';
 
 
 const Home = () => {
@@ -70,7 +71,7 @@ const Home = () => {
      
       
       
-     
+     <Footer/>
       
      
     </div>

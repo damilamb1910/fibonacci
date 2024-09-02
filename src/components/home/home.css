@@ -93,6 +93,7 @@ h1{
         order: 1;
         margin: 0;
         width: 90%;
+        font-size: 20px !important;
     }
     .landing__container{
         
@@ -111,11 +112,16 @@ h1{
     }
     .slogan__container h4{
         font-size: 60px !important;
-        margin-top: 300px;
+        margin-top: 50px;
     }
     h1{
         font-size: 60px !important;
         margin: 0;
+    }
+    .landing__container h3{
+        
+        font-size: 20px !important;
+        text-align: center;
     }
     
 }

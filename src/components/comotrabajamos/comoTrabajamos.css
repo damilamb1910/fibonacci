@@ -47,11 +47,13 @@
 @media only screen and  (max-width:600px) {
     
     .comoTrabajamos h4{
-        font-size: 50px;
+        font-size: 45px;
+        line-height: 50px;
+        text-align: center;
     }
     .slogan__comoTrabajamos img{
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
     }
     
     

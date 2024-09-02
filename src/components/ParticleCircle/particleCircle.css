@@ -48,3 +48,13 @@
       }
            
    }
+   @media only screen and  (max-width:600px) {
+      
+    #canvas{
+        
+      right: 15%;
+      top: -180px; 
+      }
+      
+           
+   }

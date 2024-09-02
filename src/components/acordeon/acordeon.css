@@ -41,4 +41,15 @@ overflow: hidden;
         justify-content: center;
         width: 100%;
     }
-    
+    @media only screen and  (max-width:600px) {
+        .acordeon{
+            width: 100%;
+           
+        }
+        .titulo__item__acordeon{
+            font-size: 25px;
+        }
+        .titulo__item__acordeon img{
+            width: 50px;
+        }
+    }

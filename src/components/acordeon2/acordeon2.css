@@ -40,3 +40,17 @@ text-align: center;
     .titulo__item__acordeon2 img{
         width: 40px;
     }
+
+    @media only screen and  (max-width:600px) {
+        .acordeon2{
+            width: 100%;
+           
+        }
+        
+        .titulo__item__acordeon2 img{
+            width: 40px;
+        }
+        .titulo__item__acordeon2 h3{
+            font-size: 23px;
+        }
+    }
