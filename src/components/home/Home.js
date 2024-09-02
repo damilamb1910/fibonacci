@@ -9,14 +9,20 @@ import Servicios from '../servicios/Servicios';
 import ComoTrabajamos from '../comotrabajamos/ComoTrabajamos';
 import Nosotros from '../nosotros/Nosotros';
 import Footer from '../footer/Footer';
+import img from '../../assets/img/espiralfinal5.png'
 
 
 const Home = () => {
   const {toggleMenu}=useContext(MenuContext)
-  
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
   const [loading,setLoading]=useState(true)
   
   useEffect(()=>{
+    function handleResize() {
+      setWindowSize(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
     toast('soy un toast')
     window.scrollTo(0,0)
     setLoading(true)
@@ -45,7 +51,8 @@ const Home = () => {
            <Loading loading={loading}/>
            <Toaster />
            <div className='landing__and__particle__container'>
-            <ParticleCircle/>
+            {windowSize > 600 ? <ParticleCircle/> : <img src={img} alt="" />  }
+            
            </div>
             <div className='slogan__container'>
               <h4>We are</h4>
