@@ -36,6 +36,11 @@ overflow: hidden;
     border-top: solid  #333333 2px
 
     }
+    .contenido__acordeon__show h5{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        }
     .wrapper{
         display: flex;
         justify-content: center;
@@ -48,6 +53,7 @@ overflow: hidden;
         }
         .titulo__item__acordeon{
             font-size: 25px;
+            text-align: center;
         }
         .titulo__item__acordeon img{
             width: 50px;

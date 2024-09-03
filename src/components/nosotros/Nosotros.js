@@ -30,12 +30,13 @@ const Nosotros = () => {
         <div className='card__nosotros'>
             <img src={gaston} alt="" />
             <h5>Gastón</h5>
-            <h6>🟠Designer</h6>
+            <h6>🟠Ower- Team Leader Performance
+            </h6>
             </div>
             <div className='card__nosotros'>
             <img src={cami} alt="" />
             <h5>Camila</h5>
-            <h6>🟠Designer</h6>
+            <h6>🟠Ower-Account Manager</h6>
             </div>
             <div className='card__nosotros'>
             <img src={dami} alt="" />
@@ -45,7 +46,7 @@ const Nosotros = () => {
             <div className='card__nosotros'>
             <img src={elian} alt="" />
             <h5>Elián</h5>
-            <h6>🟠Designer</h6>
+            <h6>🟠Content Creator</h6>
             </div>
 
      </div>

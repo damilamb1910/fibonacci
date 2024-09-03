@@ -32,7 +32,7 @@ const Home = () => {
         top:0,
         behavior: "smooth",
       });
-    }, "3000");
+    }, "5000");
   },[])
   const handleClick = () => {
    
@@ -51,7 +51,7 @@ const Home = () => {
            <Loading loading={loading}/>
            <Toaster />
            <div className='landing__and__particle__container'>
-            {windowSize > 600 ? <ParticleCircle/> : <img src={img} alt="" />  }
+            {windowSize > 600 ? <ParticleCircle/> : <img className='reveal-image' src={img} alt="" />  }
             
            </div>
             <div className='slogan__container'>
@@ -70,7 +70,7 @@ const Home = () => {
           <div id='servicios'>
           <Servicios/>
           </div>
-          <div id='comoTrabajamos'>
+          <div id='comotrabajamos'>
           <ComoTrabajamos/>
           </div>
       

@@ -29,6 +29,7 @@ h1{
     color: white !important;
     font-size: 150px !important;
     margin-left: 20px;
+    
 }
 
 .landing__and__particle__container h3{
@@ -36,6 +37,7 @@ h1{
     font-size: 25px !important;
     width: 400px;
     margin-bottom: 100px;
+    text-shadow: 1px 1px 18px rgba(0,0,0,1);
 }
 .slogan__container{
     display: flex;
@@ -45,6 +47,7 @@ h1{
 .slogan__container h4{
     font-size: 150px !important;
     color: white;
+    
 }
 .landing__container{
     display: flex;
@@ -79,7 +82,24 @@ h1{
 
 
 @media only screen and  (max-width:600px) {
-    
+    .home{
+        background-color: #000000;
+        background-image: none;
+        
+    }
+    .reveal-image {
+        
+        animation: revealAnimation 15s ease-in-out forwards;
+    }
+
+    @keyframes revealAnimation {
+        0% {
+            clip-path: inset(100% 0 0 0); /* Comienza recortada completamente */
+        }
+        100% {
+            clip-path: inset(0 0 0 0); /* Muestra completamente la imagen */
+        }
+    }
     
     
     .landing__and__particle__container{
@@ -113,10 +133,12 @@ h1{
     .slogan__container h4{
         font-size: 60px !important;
         margin-top: 0px;
+        text-shadow: 1px 1px 18px #FF6F00 !important;
     }
     h1{
         font-size: 60px !important;
         margin: 0;
+        text-shadow: 1px 1px 18px #FF6F00 !important;
     }
     .landing__container h3{
         
