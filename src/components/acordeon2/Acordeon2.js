@@ -1,10 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './acordeon2.css'
 import elementoGrafico5 from "../../assets/img/5.png"
 import elementoGrafico6 from "../../assets/img/6.png"
 import elementoGrafico7 from "../../assets/img/7.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Acordeon2 = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 2000, // Duración de la animación en milisegundos
+          once: true, // Si la animación solo debe ocurrir una vez
+        });
+      }, []);
     const [selected, setSelected]=useState(null)
     const toggle=(i)=>{
         if (selected == i){
@@ -54,7 +62,7 @@ const Acordeon2 = () => {
         
         <div className='acordeon2'>
 {data.map((item,i)=>(
-    <div className='item__acordeon2'>
+    <div data-aos="fade-up" className='item__acordeon2'>
 <div className='titulo__item__acordeon2' onClick={()=> toggle(i)}>
     <img src={item.elementoGrafico} alt="" />
 <h3>{item.titulo}</h3>

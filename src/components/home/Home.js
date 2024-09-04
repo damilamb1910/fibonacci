@@ -10,6 +10,8 @@ import ComoTrabajamos from '../comotrabajamos/ComoTrabajamos';
 import Nosotros from '../nosotros/Nosotros';
 import Footer from '../footer/Footer';
 import img from '../../assets/img/espiralfinal5.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Home = () => {
@@ -18,6 +20,10 @@ const Home = () => {
   const [loading,setLoading]=useState(true)
   
   useEffect(()=>{
+    AOS.init({
+      duration: 1000, // Duración de la animación en milisegundos
+      once: true, // Si la animación solo debe ocurrir una vez
+    });
     function handleResize() {
       setWindowSize(window.innerWidth);
     }
@@ -55,8 +61,8 @@ const Home = () => {
             
            </div>
             <div className='slogan__container'>
-              <h4>We are</h4>
-              <h1> Fibonacci</h1>
+              <h4 data-aos="fade-up">We are</h4>
+              <h1 data-aos="fade-right"> Fibonacci</h1>
              
             </div>
             <h3>Ayudamos a +15 empresas en toda argentina.</h3>

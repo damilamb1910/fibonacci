@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './acordeon.css'
 import elementoGrafico2 from "../../assets/img/2.png"
 import elementoGrafico3 from "../../assets/img/3.png"
@@ -7,9 +7,17 @@ import elementoGrafico9 from "../../assets/img/9.png"
 import elementoGrafico11 from "../../assets/img/11.png"
 import elementoGrafico12 from "../../assets/img/12.png"
 import elementoGrafico13 from "../../assets/img/13.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Acordeon = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 2000, // Duración de la animación en milisegundos
+          once: true, // Si la animación solo debe ocurrir una vez
+        });
+      }, []);
     const [selected, setSelected]=useState(null)
     const toggle=(i)=>{
         if (selected == i){
@@ -62,9 +70,9 @@ elementoGrafico: elementoGrafico8
         
         <div className='acordeon'>
 {data.map((item,i)=>(
-    <div className='item__acordeon'>
+    <div data-aos="fade-up" className='item__acordeon'>
 <div className='titulo__item__acordeon' onClick={()=> toggle(i)}>
-<img src={item.elementoGrafico} alt="elemento grafico" />
+<img data-aos="fade-right" src={item.elementoGrafico} alt="elemento grafico" />
 <h3>{item.titulo}</h3>
 
 {selected===i ? <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FF6F00" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
