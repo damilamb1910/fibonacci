@@ -47,7 +47,7 @@ const Home = () => {
       </button>
     </div>, 
     {
-      duration: 5000, // Duración del toast en milisegundos (5 segundos)
+      duration: 50000, // Duración del toast en milisegundos (5 segundos)
     })
     window.scrollTo(0,0)
     setLoading(true)
@@ -74,7 +74,8 @@ const Home = () => {
 
            <div className='landing__container'>
            <Loading loading={loading}/>
-           <Toaster />
+           {windowSize > 600 && <Toaster />   }
+           
            <div className='landing__and__particle__container'>
             {windowSize > 600 ? <ParticleCircle/> : <img className='reveal-image' src={img} alt="" />  }
             

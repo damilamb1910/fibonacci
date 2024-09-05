@@ -6,7 +6,10 @@
 html {
     scroll-behavior: smooth;
   }
-
+  body {
+    overflow-x: hidden;
+  }
+  
 .home{
     align-items: center;
     justify-content: center;
@@ -68,6 +71,9 @@ h1{
 @media only screen and  (max-width:1400px) {
     .slogan__container{
         margin-top: 130px;
+    }
+    [data-sonner-toast] {
+    display: none;
     }
     
     .slogan__container h4{
