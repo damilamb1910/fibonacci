@@ -59,7 +59,6 @@ const Navbar=(click)=>{
 {windowSize < 1500 ? (
            <ul  className="nav__ul">
 <a href="#nosotros"><li className="nav__item">Sobre Nosotros</li></a>
-            <a href="#dolencias" ><li className="nav__item">Dolencias</li></a>
             <a href="#servicios" ><li className="nav__item">Servicios</li></a> 
             <a href="#comotrabajamos"><li className="nav__item">¿Como trabajamos?</li></a>
             <a href="#contacto"><li className="nav__item">Contacto</li></a>
@@ -69,7 +68,6 @@ const Navbar=(click)=>{
                 ):(
                     <ul  className="nav__ul">
                        <a href="#nosotros"><li className="nav__item">Sobre Nosotros</li></a>
-            <a href="#dolencias" ><li className="nav__item">Dolencias</li></a>
             <a href="#servicios" ><li className="nav__item">Servicios</li></a> 
             <a href="#comotrabajamos"><li className="nav__item">¿Como trabajamos?</li></a>
             

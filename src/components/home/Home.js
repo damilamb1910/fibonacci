@@ -18,6 +18,17 @@ const Home = () => {
   const {toggleMenu}=useContext(MenuContext)
   const [windowSize, setWindowSize] = useState(window.innerWidth);
   const [loading,setLoading]=useState(true)
+  const mensajes = [
+    "¿Sabías que las empresas que invierten en marketing digital pueden aumentar su visibilidad hasta un 80% en los primeros 6 meses?",
+    "Trabajar con una agencia de marketing profesional puede incrementar tus conversiones hasta un 120%. ¡Haz crecer tu negocio hoy!",
+    "Las empresas que delegan su marketing digital a expertos tienen un 60% más de probabilidades de captar nuevos clientes.",
+    "¿Sabías que el 70% de las empresas que usan estrategias digitales logran un retorno de inversión positivo en menos de un año?",
+    "Con una agencia de marketing, tus campañas estarán optimizadas para obtener hasta un 3x en retorno de inversión. ¡Contáctanos y crece!"
+  ];
+  const getRandomMessage = () => {
+    const randomIndex = Math.floor(Math.random() * mensajes.length);
+    return mensajes[randomIndex];
+  };
   
   useEffect(()=>{
     AOS.init({
@@ -29,7 +40,15 @@ const Home = () => {
     }
 
     window.addEventListener('resize', handleResize);
-    toast('soy un toast')
+    toast(<div>
+      <p>{getRandomMessage()}</p>
+      <button className='toast__button' onClick={()=>{window.open('https://wa.me/541136684089', '_blank')}} style={{ color: 'white', background: 'blue', padding: '5px 10px', borderRadius: '5px', cursor: 'pointer' }}>
+        Contáctanos
+      </button>
+    </div>, 
+    {
+      duration: 5000, // Duración del toast en milisegundos (5 segundos)
+    })
     window.scrollTo(0,0)
     setLoading(true)
     setTimeout(() => {
