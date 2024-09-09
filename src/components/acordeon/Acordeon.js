@@ -16,11 +16,12 @@ const Acordeon = () => {
         AOS.init({
           duration: 2000, // Duración de la animación en milisegundos
           once: true, // Si la animación solo debe ocurrir una vez
+          disable: 'mobile' // Desactiva en dispositivos móviles si es necesario
         });
       }, []);
     const [selected, setSelected]=useState(null)
     const toggle=(i)=>{
-        if (selected == i){
+        if (selected === i){
             return setSelected(null)
         }
         setSelected(i)

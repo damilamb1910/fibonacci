@@ -30,35 +30,42 @@ const Home = () => {
     return mensajes[randomIndex];
   };
   
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
-      duration: 1000, // Duración de la animación en milisegundos
-      once: true, // Si la animación solo debe ocurrir una vez
+      duration: 1000,
+      once: true,
     });
+  
     function handleResize() {
       setWindowSize(window.innerWidth);
     }
-
+  
+    const timeoutId = setTimeout(() => {
+      cambiarLoad();
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 5000); // 5 segundos
+  
     window.addEventListener('resize', handleResize);
     toast(<div>
       <p>{getRandomMessage()}</p>
-      <button className='toast__button' onClick={()=>{window.open('https://wa.me/541136684089', '_blank')}} style={{ color: 'white', background: 'blue', padding: '5px 10px', borderRadius: '5px', cursor: 'pointer' }}>
+      <button className='toast__button' onClick={() => { window.open('https://wa.me/541136684089', '_blank') }} style={{ color: 'white', background: 'blue', padding: '5px 10px', borderRadius: '5px', cursor: 'pointer' }}>
         Contáctanos
       </button>
-    </div>, 
-    {
-      duration: 50000, // Duración del toast en milisegundos (5 segundos)
-    })
-    window.scrollTo(0,0)
-    setLoading(true)
-    setTimeout(() => {
-      cambiarLoad();
-      window.scroll({
-        top:0,
-        behavior: "smooth",
-      });
-    }, "5000");
-  },[])
+    </div>, {
+      duration: 5000,
+    });
+  
+    window.scrollTo(0, 0);
+    setLoading(true);
+  
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      clearTimeout(timeoutId); // Limpia el timeout si el componente se desmonta
+    };
+  }, []);
   const handleClick = () => {
    
   toggleMenu()  
@@ -74,7 +81,8 @@ const Home = () => {
 
            <div className='landing__container'>
            <Loading loading={loading}/>
-           {windowSize > 600 && <Toaster />   }
+           
+           <Toaster />
            
            <div className='landing__and__particle__container'>
             {windowSize > 600 ? <ParticleCircle/> : <img className='reveal-image' src={img} alt="" />  }
