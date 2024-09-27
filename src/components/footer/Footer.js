@@ -20,7 +20,7 @@ const Footer = () => {
 
 
 
-<div id='instagram' onClick={()=>{window.open('https://www.instagram.com/damianlamberti/', '_blank')}} className='logo__redes'>
+<div id='instagram' onClick={()=>{window.open('https://www.instagram.com/fibonaccigrupo', '_blank')}} className='logo__redes'>
 
 
 <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF6F00" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -45,7 +45,7 @@ const Footer = () => {
 
 </div>
 
-<div id='whatsapp' onClick={()=>{window.open('https://wa.me/541136684089', '_blank')}} className='logo__redes'>
+<div id='whatsapp' onClick={()=>{window.open('https://wa.me/541134471209', '_blank')}} className='logo__redes'>
 
 
 

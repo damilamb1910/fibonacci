@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import './nosotros.css'
-import cami from "../../assets/cami2.png"
-import dami from "../../assets/damian1.png"
-import gaston from "../../assets/img/gastonPhoto.png"
-import elian from "../../assets/img/eliasphoto.png"
+import cami from "../../assets/img/camila.png"
+import dami from "../../assets/img/damian.png"
+import gaston from "../../assets/img/gaston.png"
+import elian from "../../assets/img/elian.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
